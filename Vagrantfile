@@ -12,6 +12,9 @@ Vagrant.configure("2") do |config|
 
   config.vm.hostname = "docker"
 
+  # Change this if required
+  config.vm.network :private_network, ip: "192.168.30.10"
+
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "parallels/ubuntu-14.04"
